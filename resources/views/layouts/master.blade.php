@@ -13,7 +13,7 @@
            <link rel="stylesheet" href="{{ asset('asset/dist/css/skins/_all-skins.min.css') }}">
            <link rel="stylesheet" href="{{asset('asset/morris.js/morris.css') }}">
            <link rel="stylesheet" href="{{asset('asset/jvectormap/jquery-jvectormap.css')}}">
-           <link rel="stylesheet" href="{{asset('asset/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
+           <!-- <link rel="stylesheet" href="{{asset('asset/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}"> -->
            <!-- Data Tables -->
            <link rel="stylesheet" href="{{asset('asset/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
            <link rel="stylesheet" href="{{ asset('asset/bootstrap-daterangepicker/daterangepicker.css') }}">
@@ -44,16 +44,13 @@
         $.widget.bridge('uibutton', $.ui.button);
       </script>
       <script src="{{ asset('asset/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-      <script src="{{ asset('asset/raphael/raphael.min.js') }}"></script>
+     <!--  <script src="{{ asset('asset/raphael/raphael.min.js') }}"></script> -->
                         <!-- Data Tables -->
       <script src="{{ asset('asset/datatables.net/js/jquery.dataTables.min.js')}}"></script>
       <script src="{{ asset('asset/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
-
       <script src="{{ asset('asset/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-     
       <script src="{{asset('asset/dist/js/adminlte.min.js') }}"></script>
-      <!-- <script src="{{asset('asset/dist/js/pages/dashboard.js')}}"></script>
-      <script src="{{asset('asset/dist/js/demo.js')}}"></script>   -->
+      
 
                           <!-- Scripts Ended -->
        <script>
