@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="{{ app()->getLocale() }}">
       <head>
         
            <!-- Tell the browser to be responsive to screen width -->
@@ -14,9 +14,13 @@
            <link rel="stylesheet" href="{{asset('asset/morris.js/morris.css') }}">
            <link rel="stylesheet" href="{{asset('asset/jvectormap/jquery-jvectormap.css')}}">
            <link rel="stylesheet" href="{{asset('asset/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
+           <!-- Data Tables -->
+           <link rel="stylesheet" href="{{asset('asset/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
            <link rel="stylesheet" href="{{ asset('asset/bootstrap-daterangepicker/daterangepicker.css') }}">
            <link rel="stylesheet" href="{{ asset('asset/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"> 
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"> 
+
+
 
             <!-- Styling Files -->
         </head>
@@ -33,7 +37,7 @@
               
          @include('partials.footer')
      </div>
-        <!-- Scrips Included from the Public Asset Folder -->
+                        <!-- Scrips Included from the Public Asset Folder -->
       <script src="{{asset('asset/jquery/dist/jquery.min.js')}}"></script>
       <script src="{{asset('asset/jquery-ui/jquery-ui.min.js')}}"></script>
       <script>
@@ -41,13 +45,30 @@
       </script>
       <script src="{{ asset('asset/bootstrap/dist/js/bootstrap.min.js') }}"></script>
       <script src="{{ asset('asset/raphael/raphael.min.js') }}"></script>
+                        <!-- Data Tables -->
+      <script src="{{ asset('asset/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+      <script src="{{ asset('asset/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
+
       <script src="{{ asset('asset/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-     <!--<script src="{{ asset('asset/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js') }}"></script> -->
+     
       <script src="{{asset('asset/dist/js/adminlte.min.js') }}"></script>
       <!-- <script src="{{asset('asset/dist/js/pages/dashboard.js')}}"></script>
       <script src="{{asset('asset/dist/js/demo.js')}}"></script>   -->
 
                           <!-- Scripts Ended -->
+       <script>
+      $(function () {
+          $('#example1').DataTable()
+          $('#example2').DataTable({
+            'paging'      : true,
+            'lengthChange': false,
+            'searching'   : false,
+            'ordering'    : true,
+            'info'        : true,
+            'autoWidth'   : false
+    })
+  })
+</script>
         
 </html>
 
